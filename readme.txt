@@ -4,6 +4,7 @@ Tags: status board, panic, easy digital downloads, edd, ios, ipad
 Requires at least: 3.0
 Tested up to: 3.5.1
 Stable tag: 1.0
+Donate link: https://wp-push.com/donations/
 License: GPLv2 or later
 
 Integrate the Easy Digital Downloads API with the Status Board iPad app from Panic.
