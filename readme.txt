@@ -12,7 +12,7 @@ Integrate the Easy Digital Downloads API with the Status Board iPad app from Pan
 
 EDD - Status Board Integrates the Easy Digital Downloads API with the Status Board iPad app.
 
-Using the your Easy Digital Downloads API Key and Tokens, you can display 3 different bar graphs:
+Using your Easy Digital Downloads API Key and Tokens, you can display 3 different bar graphs:
 
 * Last 7 days sales
 * Last 7 days earnings
