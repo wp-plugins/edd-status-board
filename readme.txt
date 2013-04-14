@@ -14,27 +14,26 @@ EDD - Status Board Integrates the Easy Digital Downloads API with the Status Boa
 
 Using the your Easy Digital Downloads API Key and Tokens, you can display 3 different bar graphs:
 
-Last 7 days sales
-Last 7 days earnings
-or
-A Hybrid of last 7 days sales & earnings
+* Last 7 days sales
+* Last 7 days earnings
+* A Hybrid of last 7 days sales & earnings
 
-The URL endpoints are:
-http://yoursite.com/edd-api/sbsales/?key=[your key]&token=[your token]
-http://yoursite.com/edd-api/sbearnings/?key=[your key]&token=[your token]
-http://yoursite.com/edd-api/sbhybrid/?key=[your key]&token=[your token]
+= The URL endpoints are =
+* http://yoursite.com/edd-api/sbsales/?key=[your key]&token=[your token]
+* http://yoursite.com/edd-api/sbearnings/?key=[your key]&token=[your token]
+* http://yoursite.com/edd-api/sbhybrid/?key=[your key]&token=[your token]
 
 You can manually add them to Status Board, or use the buttons located in the Profile page of wp-admin to automatically add the graphs (as seen in Screenshot 2).
 
-***This plugin requires Easy Digital Downloads version 1.5.2 or greater.***
+**This plugin requires Easy Digital Downloads version 1.5.2 or greater.**
 
 The following filters exist:
-edd_statusboard_graph_type - Alters the type of graph, bar or line. (Default: bar)
-edd_statusboard_sales_color - Alters the color of the sales bar graphs. (Default: orange)
-edd_statusbaord_earnings_prefix - Alters the prefix of earnings amounts. (Default: $)
-edd_statusbaord_earnings_suffix - Alters the suffix of earnings amounts (Default: blank)
-edd_statusboard_earnings_color - Alters the color of the earnings bar graphs (Default: green)
-edd_statusboard_date_format - Alter the date format of the X-Axis. (Default: n/j or, month/day, uses PHP date formatting)
+* edd_statusboard_graph_type - Alters the type of graph, bar or line. (Default: bar)
+* edd_statusboard_sales_color - Alters the color of the sales bar graphs. (Default: orange)
+* edd_statusbaord_earnings_prefix - Alters the prefix of earnings amounts. (Default: $)
+* edd_statusbaord_earnings_suffix - Alters the suffix of earnings amounts (Default: blank)
+* edd_statusboard_earnings_color - Alters the color of the earnings bar graphs (Default: green)
+* edd_statusboard_date_format - Alter the date format of the X-Axis. (Default: n/j or, month/day, uses PHP date formatting)
 
 == Installation ==
 
