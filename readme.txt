@@ -27,7 +27,7 @@ You can manually add them to Status Board, or use the buttons located in the Pro
 
 **This plugin requires Easy Digital Downloads version 1.5.2 or greater.**
 
-The following filters exist:
+= The following filters exist =
 * edd_statusboard_graph_type - Alters the type of graph, bar or line. (Default: bar)
 * edd_statusboard_sales_color - Alters the color of the sales bar graphs. (Default: orange)
 * edd_statusbaord_earnings_prefix - Alters the prefix of earnings amounts. (Default: $)
