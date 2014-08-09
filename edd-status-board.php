@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Status Board
 Plugin URI: http://www.kungfugrep.com
 Description: Integrates the Easy Digital Downloads API with the Status Board iPad App.
-Version: 1.1
+Version: 1.1.1
 Author: Chris Klosowski
 Author URI: http://www.kungfugrep.com
 License: GPLv2 or later
@@ -122,10 +122,10 @@ function edd_statusboard_output( $data, $query_mode, $this ) {
 			}
 
 			$dates = array();
-			$i = 0;
-			while ( $i <= 7 ) {
+			$i = 7;
+			while ( $i >= 0 ) {
 				$dates[date( 'n\/j', strtotime( '-' . $i . ' days' ) )] = 0;
-				$i++;
+				$i--;
 			}
 
 			$commissions_earnings = $dates;
@@ -181,11 +181,16 @@ function edd_statusboard_output( $data, $query_mode, $this ) {
 
 function edd_statusboard_profile_endpoint_display( $user ) {
 	global $edd_options;
-	if ( ( edd_get_option( 'api_allow_user_keys', false ) || current_user_can( 'manage_shop_settings' ) ) && current_user_can( 'edit_user', $user->ID ) ) {
 
-		$user = get_userdata( $user->ID );
-		$key = $user->edd_user_public_key;
-		$token = hash( 'md5', $user->edd_user_secret_key . $user->edd_user_public_key );
+	$user = get_userdata( $user->ID );
+	$key = $user->edd_user_public_key;
+	$token = hash( 'md5', $user->edd_user_secret_key . $user->edd_user_public_key );
+
+	if ( ! current_user_can( 'edit_user', $user->ID ) ) {
+		return;
+	}
+
+	if ( ( edd_get_option( 'api_allow_user_keys', false ) || current_user_can( 'manage_shop_settings' ) ) || ( ! empty( $key ) && ! empty( $token ) ) ) {
 
 		$sb_url_base = get_bloginfo( 'url' ) . '/edd-api';
 		?>
@@ -210,6 +215,7 @@ function edd_statusboard_profile_endpoint_display( $user ) {
 				</tr>
 			</tbody>
 		</table>
+
 	<?php
 	}
 }
