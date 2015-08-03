@@ -3,7 +3,7 @@ Contributors: cklosows, mordauk
 Tags: status board, panic, easy digital downloads, edd, ios, ipad
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Donate link: https://wp-push.com/donations/
 License: GPLv2 or later
 
@@ -20,11 +20,11 @@ Using your Easy Digital Downloads API Key and Tokens, you can display 3 differen
 * A Hybrid of last 7 days sales & earnings
 
 = The URL endpoints are =
-* http://yoursite.com/edd-api/sbsales/?key=apikey&token=usertoken
-* http://yoursite.com/edd-api/sbearnings/?key=apikey&token=usertoken
-* http://yoursite.com/edd-api/sbhybrid/?key=apikey&token=usertoken
-* http://yoursite.com/edd-api/sbcommissions/?key=apikey&token=usertoken
-* http://yoursite.com/edd-api/sbstorecommissions/?key=apikey&token=usertoken
+* http://example.org/edd-api/sbsales/?key=apikey&token=usertoken
+* http://example.org/edd-api/sbearnings/?key=apikey&token=usertoken
+* http://example.org/edd-api/sbhybrid/?key=apikey&token=usertoken
+* http://example.org/edd-api/sbcommissions/?key=apikey&token=usertoken
+* http://example.org/edd-api/sbstorecommissions/?key=apikey&token=usertoken
 
 You can manually add them to Status Board, or use the buttons located in the Profile page of wp-admin to automatically add the graphs (as seen in Screenshot 2).
 
@@ -49,6 +49,11 @@ You can manually add them to Status Board, or use the buttons located in the Pro
 
 
 == Changelog ==
+= 1.1.6 =
+* FIX: Spelling error in settings
+* FIX: Changed URLs in readme to be example.org
+* UPDATED: Translations
+
 = 1.1.5 =
 * NEW: Forces a scale of 1, to avoid "(Thousands)" from auto scaling the graphs. Filter added to allow setting the scale or auto scaling.
 
