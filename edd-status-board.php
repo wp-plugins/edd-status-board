@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Status Board
 Plugin URI: http://www.kungfugrep.com
 Description: Integrates the Easy Digital Downloads API with the Status Board iPad App.
-Version: 1.1.5
+Version: 1.1.6
 Author: Chris Klosowski
 Author URI: http://www.kungfugrep.com
 License: GPLv2 or later
@@ -268,7 +268,7 @@ function edd_statusboard_profile_endpoint_display( $user ) {
 			<tbody>
 				<tr id="edd-sb-user-urls">
 					<th>
-						<label for="edd_set_api_key"><?php echo sprintf( __( 'Click a button to add the graph to Status Board. Requires an iPad with the <a href="%s" target="_blank">Status Board app</a> insatlled', 'edd-statusboard-txt' ), 'https://itunes.apple.com/us/app/status-board/id449955536?mt=8' ); ?></label>
+						<label for="edd_set_api_key"><?php echo sprintf( __( 'Click a button to add the graph to Status Board. Requires an iPad with the <a href="%s" target="_blank">Status Board app</a> installed', 'edd-statusboard-txt' ), 'https://itunes.apple.com/us/app/status-board/id449955536?mt=8' ); ?></label>
 					</th>
 					<td>
 						<?php if ( ( isset( $edd_options['api_allow_user_keys'] ) || current_user_can( 'manage_shop_settings' ) ) && current_user_can( 'view_shop_reports' ) ) : ?>
